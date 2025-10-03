@@ -252,18 +252,28 @@ header .nav-cta:focus-visible {
   text-decoration: underline;
 }
 
-#contact .service-hours {
+#contact .service-badges {
   margin-top: 28px;
   color: #333333;
   font-weight: 600;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
-#contact .service-hours i {
+#contact .service-badges span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 10px 18px;
+  box-shadow: 0 12px 28px rgba(17, 17, 17, 0.08);
+}
+
+#contact .service-badges i {
   color: #ffcc00;
-  margin-right: 8px;
 }
 
 /* Footer */
@@ -351,6 +361,15 @@ footer {
 
   #contact address {
     padding: 24px 20px;
+  }
+
+  #contact .service-badges {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #contact .service-badges span {
+    justify-content: center;
   }
 }
 
